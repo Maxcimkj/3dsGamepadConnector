@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		581C6F1E29EB5FB40002DED8 /* StdOutListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C6F1D29EB5FB40002DED8 /* StdOutListener.swift */; };
+		581C6F2229EB65140002DED8 /* GamepadButtonsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C6F2129EB65140002DED8 /* GamepadButtonsMapper.swift */; };
+		581C6F2629EB79EA0002DED8 /* SendGamepadButtonsTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C6F2529EB79EA0002DED8 /* SendGamepadButtonsTask.swift */; };
+		581D24C129DF512B007F196C /* UdpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581D24C029DF512B007F196C /* UdpClient.swift */; };
+		584468BF29E5E9E4002476BB /* GamepadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584468BE29E5E9E4002476BB /* GamepadView.swift */; };
+		584468C829E61E45002476BB /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584468C729E61E45002476BB /* GameController.framework */; };
+		5861471929DA07A700C0D2A8 /* _dsGamepadConnectorProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861471829DA07A700C0D2A8 /* _dsGamepadConnectorProjectApp.swift */; };
+		5861471D29DA07A800C0D2A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5861471C29DA07A800C0D2A8 /* Assets.xcassets */; };
+		5861472029DA07A800C0D2A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5861471F29DA07A800C0D2A8 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		581C6F1D29EB5FB40002DED8 /* StdOutListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StdOutListener.swift; sourceTree = "<group>"; };
+		581C6F2129EB65140002DED8 /* GamepadButtonsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamepadButtonsMapper.swift; sourceTree = "<group>"; };
+		581C6F2529EB79EA0002DED8 /* SendGamepadButtonsTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendGamepadButtonsTask.swift; sourceTree = "<group>"; };
+		581D24C029DF512B007F196C /* UdpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdpClient.swift; sourceTree = "<group>"; };
+		5821A17B29ECA5B400AD53C9 /* 3dsGamepadConnector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3dsGamepadConnector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		584468BE29E5E9E4002476BB /* GamepadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamepadView.swift; sourceTree = "<group>"; };
+		584468C729E61E45002476BB /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		5861471829DA07A700C0D2A8 /* _dsGamepadConnectorProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _dsGamepadConnectorProjectApp.swift; sourceTree = "<group>"; };
+		5861471C29DA07A800C0D2A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5861471F29DA07A800C0D2A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5861472129DA07A800C0D2A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5861471229DA07A700C0D2A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584468C829E61E45002476BB /* GameController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5821A16F29ECA45F00AD53C9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				581C6F1D29EB5FB40002DED8 /* StdOutListener.swift */,
+				581C6F2129EB65140002DED8 /* GamepadButtonsMapper.swift */,
+				581C6F2529EB79EA0002DED8 /* SendGamepadButtonsTask.swift */,
+				581D24C029DF512B007F196C /* UdpClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		584468C629E61E45002476BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				584468C729E61E45002476BB /* GameController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5861470C29DA07A700C0D2A8 = {
+			isa = PBXGroup;
+			children = (
+				5861471729DA07A700C0D2A8 /* 3dsGamepadConnector */,
+				584468C629E61E45002476BB /* Frameworks */,
+				5821A17B29ECA5B400AD53C9 /* 3dsGamepadConnector.app */,
+			);
+			sourceTree = "<group>";
+		};
+		5861471729DA07A700C0D2A8 /* 3dsGamepadConnector */ = {
+			isa = PBXGroup;
+			children = (
+				5821A16F29ECA45F00AD53C9 /* Service */,
+				5861471829DA07A700C0D2A8 /* _dsGamepadConnectorProjectApp.swift */,
+				5861471C29DA07A800C0D2A8 /* Assets.xcassets */,
+				5861472129DA07A800C0D2A8 /* Info.plist */,
+				5861471E29DA07A800C0D2A8 /* Preview Content */,
+				584468BE29E5E9E4002476BB /* GamepadView.swift */,
+			);
+			path = 3dsGamepadConnector;
+			sourceTree = "<group>";
+		};
+		5861471E29DA07A800C0D2A8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5861471F29DA07A800C0D2A8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5861471429DA07A700C0D2A8 /* 3dsGamepadConnector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5861473A29DA07A800C0D2A8 /* Build configuration list for PBXNativeTarget "3dsGamepadConnector" */;
+			buildPhases = (
+				5861471129DA07A700C0D2A8 /* Sources */,
+				5861471229DA07A700C0D2A8 /* Frameworks */,
+				5861471329DA07A700C0D2A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 3dsGamepadConnector;
+			productName = 3dsGamepadConnectorProject;
+			productReference = 5821A17B29ECA5B400AD53C9 /* 3dsGamepadConnector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5861470D29DA07A700C0D2A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5861471429DA07A700C0D2A8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 5861471029DA07A700C0D2A8 /* Build configuration list for PBXProject "3dsGamepadConnector" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5861470C29DA07A700C0D2A8;
+			productRefGroup = 5861470C29DA07A700C0D2A8;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5861471429DA07A700C0D2A8 /* 3dsGamepadConnector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5861471329DA07A700C0D2A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5861472029DA07A800C0D2A8 /* Preview Assets.xcassets in Resources */,
+				5861471D29DA07A800C0D2A8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5861471129DA07A700C0D2A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581C6F2629EB79EA0002DED8 /* SendGamepadButtonsTask.swift in Sources */,
+				581C6F2229EB65140002DED8 /* GamepadButtonsMapper.swift in Sources */,
+				581C6F1E29EB5FB40002DED8 /* StdOutListener.swift in Sources */,
+				581D24C129DF512B007F196C /* UdpClient.swift in Sources */,
+				584468BF29E5E9E4002476BB /* GamepadView.swift in Sources */,
+				5861471929DA07A700C0D2A8 /* _dsGamepadConnectorProjectApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5861473829DA07A800C0D2A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5861473929DA07A800C0D2A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5861473B29DA07A800C0D2A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"3dsGamepadConnector/Preview Content\"";
+				DEVELOPMENT_TEAM = WM5K7L7P58;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = 3dsGamepadConnector/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mekhma.-3dsGamepadConnector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5861473C29DA07A800C0D2A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"3dsGamepadConnector/Preview Content\"";
+				DEVELOPMENT_TEAM = WM5K7L7P58;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = 3dsGamepadConnector/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mekhma.-3dsGamepadConnector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5861471029DA07A700C0D2A8 /* Build configuration list for PBXProject "3dsGamepadConnector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5861473829DA07A800C0D2A8 /* Debug */,
+				5861473929DA07A800C0D2A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5861473A29DA07A800C0D2A8 /* Build configuration list for PBXNativeTarget "3dsGamepadConnector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5861473B29DA07A800C0D2A8 /* Debug */,
+				5861473C29DA07A800C0D2A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5861470D29DA07A700C0D2A8 /* Project object */;
+}
